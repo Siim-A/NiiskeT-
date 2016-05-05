@@ -3,7 +3,22 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="242,136,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Ring" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click" Height="40"/>
+        <Button Content="Ruut" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click" Height="40"/>
+        <Button Content="Ristkülik" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click" Height="40"/>
+        <Button Content="Kolmnurk" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click" Height="40"/>
+        <Label Content="Pikkus" Grid.Column="1" HorizontalAlignment="Left" Margin="45,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Laius" Grid.Column="1" HorizontalAlignment="Left" Margin="45,97,0,0" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="146,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="146,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Ümbermõõt" Grid.Column="1" HorizontalAlignment="Left" Margin="195,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.549,0.4"/>
+        <CheckBox Content="Laius" Grid.Column="1" HorizontalAlignment="Left" Margin="195,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.549,0.4" Width="85"/>
+        <Label Content="Tulemus" Grid.Column="1" HorizontalAlignment="Left" Margin="146,236,0,0" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="205,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
